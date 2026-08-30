@@ -1,8 +1,9 @@
 [package]
 name = "Inscribed Enchantments"
 description = "Replaces the enchanted-item sheen with breathing Daedric glyphs drawn on the item's surface."
-version = "0.2.0"
+version = "1.0.0"
 authors = ["Storm Atronach"]
+repository = "https://github.com/StormAtronach/InscribedEnchantments"
 
 [tools.mwse]
 lua-mod = "InscribedEnchantments"
