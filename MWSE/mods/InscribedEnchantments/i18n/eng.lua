@@ -58,12 +58,12 @@ return {
     ["glyphSize.option.cracks"] = "Cracks",
     ["glyphSize.option.cracksHD"] = "Cracks, high resolution",
     ["glyphSize.description"] = "Normal draws 14 glyphs per texture tile at about 16-22 pixels; Small draws 20 at "
-        .. "about 10-14 pixels. The Sparse sets use the same glyph sizes but place fewer glyphs (8 and 10), "
-        .. "leave them invisible when not lit, and light each one for a shorter moment, so only two or three "
-        .. "show at a time. Cracks replaces the glyphs with a network of hairline cracks that light up from "
-        .. "one end to the other, as if the enchantment were inside the material; the glyph height limits "
-        .. "below do not apply to it. The high resolution version draws cracks in the same style at twice the "
-        .. "texture size, with smoother lines. The on-item size also depends on each mesh's texture mapping.",
+        .. "about 10-14 pixels. The Sparse sets keep those sizes but place fewer glyphs (8 and 10), keep them "
+        .. "invisible when not lit, and light each one for a shorter moment, so only two or three show at a "
+        .. "time. Cracks replaces the glyphs with a network of hairline cracks that light up from one end to "
+        .. "the other, as if the enchantment were inside the metal; the glyph height limits below do not apply "
+        .. "to it. The high resolution version draws the same style of cracks at twice the texture size, with "
+        .. "smoother lines. How big any of this is on the item depends on each mesh's texture mapping.",
 
     ["fps.label"] = "Animation speed (frames per second)",
     ["fps.description"] = "Speed of the 192-frame glyph loop. 12 means one loop every 16 seconds; lower is slower "

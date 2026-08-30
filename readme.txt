@@ -41,12 +41,13 @@ All settings are in the Mod Config menu under "Inscribed Enchantments". Changes 
 as the menu closes, no reload needed.
 
 - Settings: show glyphs and hide the vanilla sheen (independent of each other), glyph colour
-  (enchantment colour or a fixed one), glyph set (normal, small, sparse versions of both with
-  fewer glyphs that light up one or two at a time, and "cracks", a network of hairline cracks
-  that glow from one end to the other instead of letters, in a normal and a high resolution
-  version), animation speed, whether items animate
-  in step or each on its own, and the surface rules: respect existing glow maps, skip distorted
+  (enchantment colour or a fixed one), glyph set, animation speed, whether items animate in
+  step or each on its own, and the surface rules: respect existing glow maps, skip distorted
   surfaces, maximum stretch, minimum and maximum glyph height.
+- Glyph sets: normal and small glyphs; sparse versions of both, where only one or two glyphs
+  are lit at a time; and "cracks", a network of hairline cracks that light up from one end to
+  the other instead of letters, in a normal and a high resolution version. The default is the
+  small set.
 - Filters: player only, equipped only, weapons / armor / clothing, enchantment cast types, and
   a "skip meshes containing" text filter.
 - Blocked items: per-item and per-plugin exclusions.
@@ -68,7 +69,14 @@ gives the controllers the game's global clock. Dropped and placed items get the 
 authored animated NIF, with the geometry under the animated node and the controller on the
 shape's property. Worn items keep their geometry where the character animation and the paperdoll
 can pose it; there the animated node only carries the controllers. Nothing runs per frame in
-Lua. Surfaces whose UV layout would stretch or oversize the glyphs are skipped.
+Lua. The mod measures each surface's UV layout first and skips the ones where the glyphs would
+come out stretched or oversized; fewer surfaces glow, none look smeared.
+
+Why not just replace the vanilla textures? The vanilla effect is an environment map: the game
+looks up the texture by the direction of the surface relative to the camera, which is what
+makes it slide. Anything drawn into those textures slides with it, so legible writing is
+impossible there. The glow map, which the mesh's own UV coordinates pin to the surface, is the
+only fixed-function stage that both stays put and adds light.
 
 Known limitations
 -----------------
@@ -83,7 +91,7 @@ Known limitations
 
 Credits
 -------
-Glyphs are baked from hardek's "Better Daedric Font" (Aligned+XY variant), itself based on
+The glyphs come from hardek's "Better Daedric Font" (Aligned+XY variant), itself based on
 Dongle's Oblivion Worn Daedric font; see "Better Daedric Font.txt" (included as its licence
 requires). Built with MWSE.
 
