@@ -1,0 +1,41 @@
+Better Daedric Font
+v3.2
+by hardek
+
+--Description
+This mod is a high resolution replacement for the Daedric font used in spell scrolls. It is based on Dongle's Oblivion Worn font, found here: https://www.imperial-library.info/content/daedric-alphabet
+Two styles are included: Standard and Aligned. In both, as with the original, the letters X and Y aren't present, uppercase and lowercase letters are identical and there are no numbers or punctuation marks.
+The Standard style matches Morrowind's original font: letters are slightly different sizes and are positioned haphazardly. This is installed by default.
+The Aligned style matches Dongle's font: letters are similar sizes and are positioned uniformly.
+Additionally, both styles have a variant with the letters X and Y present. The sample images show all the available options.
+
+--Changelog
+-v3.0
+Remade from scratch. Letter edges are softer and spacing is improved.
+If you're using version 1 of this mod, version 3 uses a different method for the XY options. The file names are the same, so you can overwrite the old files with these new ones.
+-v3.2
+Adjusted spacing of d/D.
+Adjusted spacing of absent characters.
+Combined variants into single archive.
+
+--Installation
+1. Open your Morrowind\Data Files\Fonts folder and rename or make a copy of the file "daedric_font.fnt" found in there. If you don't do this, you won't be able to restore the original font.
+2. Move the files "daedric_font.fnt" and "daedric_font_obw.tex" from this mod into the Fonts folder.
+2b. If you want to use a different style, rename the desired .fnt file to "daedric_font.fnt" and move it into the Fonts folder, overwriting if prompted.
+
+--Uninstallation
+1. Delete "daedric_font.fnt" and "daedric_font_obw.tex" from the Fonts folder.
+2. Replace the original "daedric_font.fnt" file.
+
+--Permissions
+This mod may be redistributed in whole or in part, in original or modified form, but only freely. This text file must be included with any redistribution.
+
+--Credits
+Bethesda Softworks, for Morrowind
+Dongle, for his Oblivion Worn font
+Hrnchamd, for Better Dialogue Font (which inspired me to make this)
+Kvazar, for Littera font generator
+ManaUser, for Morrowind Font Reader
+
+--Contact
+Find me as hardek at Nexus Mods: https://www.nexusmods.com/users/791999
