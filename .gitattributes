@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.tga binary
+*.nif binary
+*.tex binary
+*.fnt binary
+*.png binary
