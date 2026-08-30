@@ -47,10 +47,6 @@ MCM and one folder suffix on disk.
 - Before decorating a shape the mod measures its UV-to-world mapping and skips it when the
   glyphs would come out stretched or oversized.
 
-A longer write-up of the engine behaviour this relies on (controller timing, animation
-managers, why worn and placed items need different node layouts) lives with the author's
-engineering notes and may move here later.
-
 ## Credits
 
 The glyphs come from hardek's "Better Daedric Font" (Aligned+XY variant), based on Dongle's
