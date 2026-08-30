@@ -86,3 +86,6 @@ Credits
 Glyphs are baked from hardek's "Better Daedric Font" (Aligned+XY variant), itself based on
 Dongle's Oblivion Worn Daedric font; see "Better Daedric Font.txt" (included as its licence
 requires). Built with MWSE.
+
+The mod itself (code, generator and generated assets) is released under the MIT licence; see
+LICENSE in the repository at https://github.com/StormAtronach/InscribedEnchantments.
